@@ -1,0 +1,31 @@
+{
+  "name": "chat-app-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristamcmanus/chat-app-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristamcmanus/chat-app-server/issues"
+  },
+  "homepage": "https://github.com/kristamcmanus/chat-app-server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "getstream": "^7.3.1",
+    "nodemon": "^2.0.15",
+    "stream-chat": "^4.4.3",
+    "twilio": "^3.71.2"
+  }
+}
