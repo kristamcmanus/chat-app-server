@@ -1,11 +1,14 @@
 const { connect } = require('getstream');
 const bcrypt = require('bcrypt');
-const StreamChat = require('stream-chat');
+const StreamChat = require('stream-chat').StreamChat;
 const crypto = require('crypto');
+
+// for environment variables
+require('dotenv').config(); // allows us to call environment variables inside node applications
 
 const api_key = process.env.STREAM_API_KEY;
 const api_secret = process.env.STREAM_API_SECRET;
-const api_id = process.env.STREAM_API_ID;
+const app_id = process.env.STREAM_APP_ID;
 
 const signup = async(req, res) => {
   try {
@@ -49,7 +52,7 @@ const login = async (req, res) => {
         res.status(500).json({ message: 'Incorrect password' });
       }
 
-  } catch (error) {
+  } catch (error) {ads
     console.log(error);
 
     res.status(5000).json({ message: error });

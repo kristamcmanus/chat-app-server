@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors'); // cross origin requests
 
-
 const authRoutes = require('./routes/auth.js')
 // instance of express application
 const app = express();
